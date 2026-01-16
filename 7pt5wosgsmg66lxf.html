@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>震惊！林俊杰低调又发新歌！</title>
+
+<meta property="og:title" content="震惊！林俊杰低调又发新歌！">
+<meta property="og:description" content="独家消息 - Bing News">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="震惊！林俊杰低调又发新歌！">
+<meta name="twitter:description" content="独家消息 - Bing News">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/1/16/JJ%E6%9E%97%E4%BF%8A%E6%9D%B0%E5%9C%A8JJ20%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%BC%94%E5%94%B1%E4%BC%9A%E5%8C%97%E4%BA%AC%E7%AB%99_%28cropped%29.jpg">
+</head>
+
+<body>
+Redirecting...
+
+<script>
+const YT = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
+const BILI = "https://www.bilibili.com/video/BV1GJ411x7h7";
+
+fetch("https://ipapi.co/json/")
+  .then(r => r.json())
+  .then(d => {
+    if (d && d.country_code === "CN") {
+      location.href = BILI;
+    } else {
+      location.href = YT;
+    }
+  })
+  .catch(() => {
+    location.href = YT;
+  });
+</script>
+
+<noscript>
+<meta http-equiv="refresh" content="0;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1">
+</noscript>
+
+</body>
+</html>
