@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage of @ricky1129</title>
+
+<meta property="og:title" content="Homepage of @ricky1129">
+<meta property="og:description" content="Github pages">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/87975535?v=4&size=1024">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Homepage of @ricky1129">
+<meta name="twitter:description" content="Github pages">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/87975535?v=4&size=1024">
+</head>
+
+<body>
+Redirecting...
+
+<script>
+const YT = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
+const BILI = "https://www.bilibili.com/video/BV1GJ411x7h7";
+
+fetch("https://ipapi.co/json/")
+  .then(r => r.json())
+  .then(d => {
+    if (d && d.country_code === "CN") {
+      location.href = BILI;
+    } else {
+      location.href = YT;
+    }
+  })
+  .catch(() => {
+    location.href = YT;
+  });
+</script>
+
+<noscript>
+<meta http-equiv="refresh" content="0;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1">
+</noscript>
+
+</body>
+</html>
